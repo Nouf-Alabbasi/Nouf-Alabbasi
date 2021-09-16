@@ -1,18 +1,6 @@
-<!-- to do+rememeber
-	o allow the screen to be resizes (media queries) (so that the page doesn't fall apart)
-		o remove all absolute 
-	o add footer
-	o decide what to do in the nav bar
-
-	problems:
-		o the profile container doesn't extend all the way to the right side
-
- -->
-
-
 <html>
 <head>
-	<title>page</title>
+	<title>button page</title>
 
 	<!-- google fonts  -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,86 +11,15 @@
 	<link rel="stylesheet" href="stylesheet.css">	
 
 </head>
-<body bgcolor="#f3f7f7">
+<body>
 
-	<div class="pagecontentGroup1">
 
-		<!-- the nav bar -->
-		<div class="nav"> </div>
-
-		<!-- the title of the video -->
-		<div class="titleOfTheVideo">
-			<p style="font-size:50px; margin: 0; ">This is the Title</p>
-		</div>
-
-		<!-- the video -->
-		<video class="video-container" width="850" height="480" controls>
-			<source src="https://www.commlab.nyuadim.com/MangF21/CommLabVideo.mp4" type="video/mp4">
-		</video>
-
-		<!-- all the elements to the right of the video -->
-		<div class="elementsOnTheSide">
-			<span class="description">	
-				<p style="font-size:20px; margin: 0;">Descreption of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
-			</span>
-
-		<!-- the buttons to the right of the video -->
-			<div class="container" style="position: relative; bottom: 0;">
-				<div id="button" style="position: relative; bottom: 0;">
-					<a href="">
-						<p style="text-align: center; vertical-align: middle; line-height: 70px; "> <p style="text-align: center; vertical-align: middle; line-height: 70px; "> button 1</p></p>
-					</a>
-				</div>
-				<div id="button" style="position: relative; bottom: 0;">
-					<a href="">
-						<p style="text-align: center; vertical-align: middle; line-height: 70px; "> <p style="text-align: center; vertical-align: middle; line-height: 70px; "> button 2</p></p>
-					</a>
-				</div>
-			</div>
-		<!-- end the buttons to the right of the video -->
-
+	<div class="container">
+		<div id="button">
+			<a href="index.html">
+				<p style="text-align: center; vertical-align: middle; line-height: 70px; "> button 1</p>
+			</a>
 		</div>
 	</div>
-
-
-	<!-- the profile pictures -->
-	<div class="TeamsTitle"> <p style="font-size:50px; margin: 0; "> This is the Team</p> </div>
-
-	<!-- the individual profile pictures -->
-	<div class="profile_container" style="background: rgba(102, 153, 153, 0.3)" >
-		<div class ="profile_box">
-			<img class="profile" src="profile.png" style="width: 250px; height: 300px; object-fit: cover;">
-			<p> person name</p>
-			<p> one line about person</p>
-		</div>
-
-		<div class ="profile_box">
-			<img class="profile" src="profile.png" style="width: 250px; height: 300px; object-fit: cover;">
-			<p> person name</p>
-			<p> one line about person</p>
-		</div>
-
-		<div class ="profile_box">
-			<img class="profile" src="profile.png" style="width: 250px; height: 300px; object-fit: cover;">
-			<p> person name</p>
-			<p> one line about person</p>
-		</div>
-
-	<!-- the fading color under the profile box -->
-	</div>
-	<div style="width: 100%; height: 400px; background: linear-gradient(rgba(102, 153, 153, 0.3),#f3f7f7 80%); position: relative; bottom: 100;">
-	</div>
-	<!-- end the profile pictures -->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
