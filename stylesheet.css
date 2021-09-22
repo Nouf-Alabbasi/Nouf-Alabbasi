@@ -1,77 +1,123 @@
-/*current:  button page/ 3index.html*/
 
-.button{
-	width: 415px;
-	border-radius: 10px;
-	height: 70px;
+	/*button page*/
+.buttonPagecontainer{
+	position: relative;
+	top: 80%;
+	margin: auto;
+	width: 400px;
+	padding: 10px;
+	height: 50px;
+	justify-content: center;
+	z-index: 9999;
 }
 
-.container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -35px;
-	margin-left: -207.5px;
-}
-
-
-
-
-#button {
-	width: 415px;
-	border-radius: 10px;
-	height: 70px;
-    background: rgba(102, 153, 153, 0.3);
-}
-a {
-    display: block;
-    width: 100%;
-    line-height: 2em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    color: black;
-}
-a:hover {
-    color: rgba(99, 99, 99);
-    background: rgba(76, 168, 175, 0.3);
-}
-
-p {
-	font-family: 'Open Sans', sans-serif;
+.buttonPagetitle{
+	position: relative;
+	text-align: center;
+	top: 30%;
+	right: 1%;
+	width: 100%;
+	z-index: 9999;
+	height: 0px;
+	background: red;
 }
 
 
-/*3index: */
-.pagecontentGroup1{
-	height: 1000px;
-	top: 0;
+/*main page*/
+.mainContainer{
+	position: relative;
+	height: 100vh;
+	width: 100hv;
+	display: block;
+	flex-wrap: wrap;
+
 }
 
+@media only screen and (max-width: 1400px){
+	.mainContainer{
+		height: 1169px;
 
+	}
+}
+
+.video{
+	position:relative;
+	display: flex;
+	float: left;
+	height: 480px;
+	width: 850px;
+	z-index: 100;
+}
+
+/*used to hold the video but also to add a "shadow"*/
 .video-container{
-	position: absolute;
-	top: 160px;
-	right: 525px;
+	position:relative;
+	display: flex;
+	float: left;
+	top: 155px;
+	left: 75px;
+	height: 480px;
+	width: 850px;
+	background: lightcoral;
+	z-index: 100;
+	margin-right: 90px;
+}
+
+.elementsRight{
+	position: relative;
+	float: right;
+	height: 480px;
+	width: 300px;
+	background: lightgoldenrodyellow;
+	z-index: 100;
+
+}
+
+.elementsRight-shadow{
+	position:relative;
+	float: right;
+	top: 155px;
+	right: 150px;
+	height: 480px;
+	width: 300px;
+	background: lightcoral;
+	z-index: 100;
+	margin-left: 100px;
 }
 
 .description{
 	position: relative;
 }
 
-.elementsOnTheSide{
-	position: absolute;
-	top: 159px;
-	left: 930px;
-	width: 415px;
-	height: 255;
+
+/*button css*/
+.container{
+	position: relative;
+	top: -30px;
+	left: 15px;
+	padding: 10px;
+}
+#button {
+	width: 80%;
+	border-radius: 10px;
+	height: 50px;
+  background: darkcyan;
 }
 
-/*.button{
+a {
+	display: block;
+	width: 100%;
+	line-height: 2em;
+	text-align: center;
+	text-decoration: none;
 	border-radius: 10px;
-	height: 70px;
-
-}*/
+	color: rgb(225,  221,  191);
+}
+a:hover {
+    color: black;
+    background: lightcoral;
+}
+/*end button css*/
 
 .emptySpace{
 	height: 28px;
@@ -79,31 +125,36 @@ p {
 }
 
 .titleOfTheVideo{
-	position: absolute;
+	position: relative;
 	top: 100px;
-	right: 525px;
+	float: right;
+	width: 58.3%;
+	margin-right: 0;
+	background-color: rgba(251,251,248, 0.3);
 }
 
 .nav{
 	position: fixed;
 	top: 0px;
 	right: 0px;
-	background-color: rgba(102, 153, 153, 0.3);
+	background-color: rgba(173, 216, 230, 0.6);
 	height: 50px;
 	width: 100%;
 	z-index: 9999;
 }
 
-.Profile{
+.profile{
 	border-radius: 150px;
+
 
 }
 
 .profile_box{
-	width: 300px;
+	position: relative;
+	width: 20%;
 	height: 350px;
-	display: flexbox;
-	justify-content: center;
+/*			display: flexbox;*/
+/*			justify-content: center;*/
 	text-align: center;
 	margin: 50px;
 }
@@ -116,14 +167,61 @@ p {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 100px;
+/*			margin-bottom: 100px;*/
+	background: lightcoral;
 }
+
 
 .TeamsTitle{
-	position: relative;
-	left:65px;
+	margin-left:65px;
 }
 
+.footerC{
+	position:relative;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: lightgoldenrodyellow;
+	height: 50px;
+	width: 100%;
+	z-index: 9999;
+}
+
+
+.eyesContainer{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	z-index: -1;
+	right: 0;
+	left: 0;
+	display: flex;
+	background: red;
+
+}
+
+/*to do*/
+.img-wrapper {
+  display: inline-block;
+  z-index: -1;		/*to move the eyes behind everything else */
+}
+
+.item-fade {
+  vertical-align: top;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.item-fade:hover {
+  opacity: 1;
+}
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
 body{
     margin:0;
     padding:0;
