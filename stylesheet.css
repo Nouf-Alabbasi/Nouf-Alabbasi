@@ -189,32 +189,22 @@ a:hover {
 }
 
 
-.eyesContainer{
-	position: relative;
-	width: 100%;
-	height: 50%;
-	z-index: -1;
-	right: 0;
-	left: 0;
-	display: flex;
-	background: red;
 
-}
-
-/*to do*/
-.img-wrapper {
+/*eyes*/
+.eye-wrapper {
   display: inline-block;
   z-index: -1;		/*to move the eyes behind everything else */
 }
 
-.item-fade {
+/*uses transition to allow the opacity to change in 0.3s*/
+.eye-fade {
   vertical-align: top;
   transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
   opacity: 0;
 }
 
-.item-fade:hover {
+/*allows the eye's opacity to turn to 1 when the hovered over*/
+.eye-fade:hover {
   opacity: 1;
 }
 
