@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="stylesheet.css"></style>
 </head>
@@ -16,7 +17,9 @@
 
 
 	<!-- nav bar -->
-	<div class="nav" onclick="location='https://www.pinterest.com/pin/81135230763387380/?d=t&mt=signup'"><p style="color: lightblue; margin-left: 55px;">The Nav Bar that leads to Nowhere</p></div>
+	<div class="nav" onclick="location='https://www.pinterest.com/pin/81135230763387380/?d=t&mt=signup'">
+		<p id="NavBar" >The Nav Bar that leads to Nowhere</p>
+	</div>
 
 
 	<!-- container to hold the video and side element with description + buttons -->
@@ -24,13 +27,12 @@
 
 		<!-- the title of the video -->
 		<div class="titleOfTheVideo">
-			<p style="font-size:50px; margin: 0; font-weight: bold; ">This is the Title</p>
+			<p id="title">This is the Title</p>
 		</div>
 
 		<!-- the video -->
 		<div class="video-container">
-
-			<video class="video" width="850" height="480" style="left:-20px; top:-20px;" controls>
+			<video class="video" controls>
 				<source src="https://www.commlab.nyuadim.com/MangF21/CommLabVideo.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -38,22 +40,22 @@
 		<!-- all the description to the right of the video + buttons-->
 		<div class="elementsRight-shadow" >
 
-			<div class="elementsRight" style="left:-20px; top:-20px; ">
+			<div class="elementsRight">
 				<!-- description -->
 				<span class="description">	
-				<p style="font-size:17px; margin-right: 30px; margin-left: 30px;">For our first Comm Lab assignment, we were asked to create a video as a response to the prompt “connection”. We were given 30 minutes to plan, film, and edit the whole video. We wanted to show that even though we are currently dealing with Covid-19 which requires us to social distance and at times have classes/meetings/events through zoom, we can still be connected.</p>
+				<p id="textToRight">For our first Comm Lab assignment, we were asked to create a video as a response to the prompt “connection”. We were given 30 minutes to plan, film, and edit the whole video. We wanted to show that even though we are currently dealing with Covid-19 which requires us to social distance and at times have classes/meetings/events through zoom, we can still be connected.</p>
 				</span>
 
 				<!-- the buttons to the right of the video -->
-				<div class="container" style="position: relative; ">
-					<div id="button" style="margin: 10px;" onclick="Audio1()">
+				<div class="container" >
+					<div class="button" id="button1" onclick="Audio1()">
 						<a>
-							 <p style="text-align: center; vertical-align: middle; line-height: 50px; "> click me</p>
+							 <p class="buttonText"> click me</p>
 						</a>
 					</div>
-					<div id="button" style="margin: 10px; " onclick="Audio2()">
+					<div class="button" id="button2" onclick="Audio2()">
 						<a>
-							 <p style="text-align: center; vertical-align: middle; line-height: 50px; "> click me too</p>
+							 <p class="buttonText"> click me too</p>
 						</a>
 					</div>
 				</div>
@@ -62,32 +64,33 @@
 	</div>
 
 	<!-- the profile pictures -->
-	<div class="TeamsTitle"> <p style="font-size:50px; margin: 0; "> This is the Team</p> </div>
+	<div class="TeamsTitle"> <p id="teamTitle"> This is the Team</p> </div>
 
 	<!-- the individual profile pictures -->
 	<div class="profile_container" >
 
 		<div class ="profile_box">
-			<img class="profile" src="rileyProfile.png" style="width: 250px; height: 300px; object-fit: cover;" alt="profile">
-			<p style="font-weight: bold;"> Riley</p>
+			<img class="profile" src="rileyProfile.png" alt="profile">
+			<p class="profileName">Riley</p>
 			<p>This is amazing person one</p>
 		</div>
 
 		<div class ="profile_box">
-			<img class="profile" src="ThaisProfile.png" style="width: 250px; height: 300px; object-fit: cover; " alt="profile">
-			<p style="font-weight: bold;">Thais</p>
+			<img class="profile" src="ThaisProfile.png" alt="profile">
+			<p class="profileName">Thais</p>
 			<p>This is amazing person two</p>
 		</div>
 
 		<div class ="profile_box">
-			<img class="profile" src="NoufProfile.png" style="width: 250px; height: 300px; object-fit: cover;" alt="profile">
-			<p style="font-weight: bold;"> Nouf</p>
+			<img class="profile" src="NoufProfile.png" alt="profile">
+			<p class="profileName"> Nouf</p>
 			<p>This is amazing person three</p>
 		</div>
 
 	</div>
 
-	<!-- the eyes -->
+	<!-- the eyes -->	
+	<!-- the css is in the html for this part becuase this seemed like the best way to make so many differnt eye sizes -->
 		<div class="eye-wrapper">
 			<img class="eye-fade" src="eye1.png" style="width: 10%; " />
 			<img class="eye-fade" src="eye2.png" style="width: 30%; " />
