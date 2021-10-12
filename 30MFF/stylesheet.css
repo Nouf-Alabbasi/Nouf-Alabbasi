@@ -19,7 +19,6 @@
 	width: 100%;
 	z-index: 9999;
 	height: 0px;
-	background: red;
 }
 
 
@@ -62,7 +61,7 @@
 	left: 75px;
 	height: 480px;
 	width: 850px;
-	background: lightcoral;
+	background: #2C2C34;
 	z-index: 100;
 	margin-right: 90px;
 }
@@ -73,7 +72,7 @@
 	float: right;
 	height: 480px;
 	width: 300px;
-	background: lightgoldenrodyellow;
+	background: #fdffb6;
 	z-index: 100;
 	left:-20px; 
 	top:-20px;
@@ -93,7 +92,7 @@
 	right: 150px;
 	height: 480px;
 	width: 300px;
-	background: lightcoral;
+	background: #2C2C34;
 	z-index: 100;
 	margin-left: 100px;
 }
@@ -114,7 +113,7 @@
 	width: 80%;
 	border-radius: 10px;
 	height: 50px;
-  background: darkcyan;
+  background: #307473;
 }
 #button1{
 	margin: 10px;
@@ -142,6 +141,10 @@
 	font-size: 20px;
 }
 
+#buttonPageButton{
+	width: 400px; 
+	background: #C47335;
+}
 
 a {
 	display: block;
@@ -154,7 +157,12 @@ a {
 }
 a:hover {
     color: black;
-    background: lightcoral;
+    background: #B796AC;
+}
+
+#buttonPageButton a:hover {
+    color: black;
+    background: #087E8B;
 }
 /*end button css*/
 
@@ -176,7 +184,7 @@ a:hover {
 	position: fixed;
 	top: 0px;
 	right: 0px;
-	background-color: rgba(173, 216, 230, 0.6);
+	background-color: rgba(193, 226, 235, 0.6);
 	height: 50px;
 	width: 100%;
 	z-index: 9999;
@@ -194,6 +202,8 @@ a:hover {
 	width: 250px; 
 	height: 300px; 
 	object-fit: cover;
+	box-shadow: 10px 10px;
+	margin-bottom: 5px;
 }
 
 .profile_box{
@@ -212,13 +222,13 @@ a:hover {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	background: lightcoral;
+	background: #2C2C34;
 }
 
 
 .TeamsTitle{
-	margin-left:65px;
-}
+/*	background: linear-gradient(to top ,lightcoral,transparent 70%);
+*/}
 
 .footerC{
 	position:relative;
@@ -226,7 +236,7 @@ a:hover {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background-color: lightgoldenrodyellow;
+	background-color: #fdffb6;
 	height: 50px;
 	width: 100%;
 	z-index: 9999;
@@ -264,14 +274,28 @@ a:hover {
 #teamTitle{
 	font-size:50px; 
 	margin: 0; 
+	margin-top: 30px;
+	font-family: Bangers;
+	letter-spacing: 50px;
+	text-align: center;
 }
 .profileName{
 	font-weight: bold;
 	font-family: Bangers;
 	font-size: 30pt;
 	margin: 0;
+	text-shadow: 5px 2px #E0CA3C;
 }
 
+.profileInfo{
+	color: whitesmoke;
+}
+
+#buttonPagetitleText{
+	font-family:'Bangers', cursive; 
+	font-size:190px; 
+	text-shadow: 15px 2px #C47335;
+}
 
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -279,5 +303,14 @@ p {
 body{
     margin:0;
     padding:0;
+    background: linear-gradient(lightblue,#2C2C34);
 }
+
+#buttonpageBody{
+    margin:0;
+    padding:0;
+    background: lightblue;	
+}
+
+
 
