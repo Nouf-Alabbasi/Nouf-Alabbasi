@@ -31,13 +31,15 @@ body{
 	margin:0;
 }
 
-.footer{
+/*.footer{
 	height: 20px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+	padding-top: 10px;
 	background: #f4978e;
-}
+	transition: width 0.3s;
+}*/
 
 .title{
 	/*background-color: #FFF;*/
@@ -336,13 +338,32 @@ p{
 		grid-template-areas:
 		'content1' 
 		'conent1Caption'
+		'conent1Caption'
+		'conent1Caption'
+		'conent1Caption'
+		'conent1Caption'
 
 		'content2'
+		'conent2Caption'
+		'conent2Caption'
+		'conent2Caption'
+		'conent2Caption'
 		'conent2Caption'
 
 		'content3'
 		'conent3Caption'
+		'conent3Caption'
+		'conent3Caption'
+		'conent3Caption'
+		'conent3Caption'
+		'conent3Caption'
+
 		'content4'
+		'conent4Caption'
+		'conent4Caption'
+		'conent4Caption'
+		'conent4Caption'
+		'conent4Caption'
 		'conent4Caption';
 		grid-gap: 10px;
 		/*padding: 10px;*/
@@ -492,6 +513,10 @@ opacity: 1;
 	.desc{
 		width: 90%;
 	}
+	.stick-people{
+		width: 60%;
+		height: auto;
+	}
 }
 @media screen and (max-width: 425px) {
 	.SitePage-grid-container{
@@ -542,16 +567,17 @@ a{
 /*_______________________stick figures*/
 .stick-figures{
 	height: 100px; 
-	position: absolute; 
-	bottom: 20px; 
-	right: 0;
+	position: fixed; 
+	bottom: 0px; 
+	right: 20px;
 }
 .stick-people{
 	height: 100px; 
-	position: absolute; 
+	position: fixed; 
 	bottom: 0px; 
 	left: 0;
 	z-index: 999;
+/*	transition: 4s;*/
 }
 /*___________________________________*/
 
