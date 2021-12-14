@@ -1,5 +1,6 @@
 console.log("linked")
 var myVar;
+// window.ZipcodeHelp= ZipcodeHelp;
 
 window.onload =  function() {Allfunc()};
 
@@ -8,8 +9,6 @@ window.onload =  function() {Allfunc()};
 		document.getElementById("mainpage").style.display = "block";
 		document.getElementById("demo").style.opacity='1';
 		document.getElementById("projTitle").style.opacity='1';
-
-	  // myVar = setTimeout(showPage, 3000);
 	}
 
 	function showPage() {
@@ -22,4 +21,11 @@ window.onload =  function() {Allfunc()};
 		document.getElementById("demo").style.opacity='1';
 		document.getElementById("projTitle").style.opacity='1';
 		
-}
+	}
+
+	  // myVar = setTimeout(showPage, 3000);
+	  function ZipcodeHelp() {
+		// document.getElementById("stickmain").onclick(function(){
+			document.getElementById("footer").style.height = "100px"
+		};
+

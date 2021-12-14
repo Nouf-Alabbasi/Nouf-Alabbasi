@@ -30,6 +30,15 @@ body{
 	/*cursor:nw-resize;*/
 	margin:0;
 }
+
+.footer{
+	height: 20px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: #f4978e;
+}
+
 .title{
 	/*background-color: #FFF;*/
 	font-family: 'EB Garamond', serif;
@@ -205,27 +214,27 @@ p{
 	padding-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-	/*overflow: hidden; */															/*thing*/
+	/*overflow: hidden; */															
 /*	height: 50%; */
 	width: 100%;
 }
 .contentTwo { 
-	grid-area: content2;  
-	padding-top: 10px;
+	grid-area: content2; 
 	margin-top: 10px;
+	padding-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-	overflow: hidden; 
+	/*overflow: hidden; */															
 /*	height: 50%; */
 	width: 100%;
 }
 .contentThird { 
 	grid-area: content3;  
-	padding-top: 10px;
 	margin-top: 10px;
+	padding-top: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-	overflow: hidden; 
+	/*overflow: hidden; */															
 /*	height: 50%; */
 	width: 100%;
 }
@@ -234,10 +243,10 @@ p{
 	grid-area: content4; 
 	margin-top: 10px;
 	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	overflow: hidden; 
-/*	height: 200px; */
+	margin-left: 10px;
+	margin-right: 10px;
+	/*overflow: hidden; */															
+/*	height: 50%; */
 	width: 100%;
 }
 
@@ -534,3 +543,22 @@ a{
 	transition-property: opacity;*/
 	-webkit-transition: opacity 4s; /* Safari */
 }
+
+
+/*_______________________stick figures*/
+.stick-figures{
+	height: 100px; 
+	position: absolute; 
+	bottom: 20px; 
+	right: 0;
+}
+.stick-people{
+	height: 100px; 
+	position: absolute; 
+	bottom: 0px; 
+	left: 0;
+	z-index: 999;
+}
+/*___________________________________*/
+
+
