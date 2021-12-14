@@ -34,7 +34,7 @@ body{
 .footer{
 	height: 20px;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	background: #f4978e;
 }
@@ -253,8 +253,6 @@ p{
 
 .conent1Caption{ 
 	grid-area: conent1Caption; 
-	margin-top: 10px;
-	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	overflow: hidden; 
@@ -267,8 +265,6 @@ p{
 
 .conent2Caption{ 
 	grid-area: conent2Caption; 
-	margin-top: 10px;
-	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	overflow: hidden; 
@@ -281,8 +277,6 @@ p{
 
 .conent3Caption{ 
 	grid-area: conent3Caption; 
-	margin-top: 10px;
-	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	overflow: hidden; 
